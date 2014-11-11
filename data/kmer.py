@@ -5,7 +5,7 @@ from scipy.spatial import distance
 
 kmerset = set()
 
-idents = os.listdir('proteins')
+idents = sorted(os.listdir('proteins'))
 kmerlists = dict()
 for ident in idents:
     f = open('proteins/' + ident)
@@ -24,4 +24,11 @@ for ident in idents:
     col_kmercount = np.bincount(kmer_inds)
     kmercount[ident].iloc[:len(col_kmercount)] = col_kmercount
 
-distmat = distance.pdist(kmercount, 'mahalanobis')
+kmercount = np.array(kmercount, np.float32)
+print 'Calculating distance matrix...'
+S = np.cov(kmercount.T)
+S1 = np.linalg.inv(S).astype(np.float32)
+km = kmercount - kmercount.mean(axis=1)[:,None]
+kmS = km.dot(S1)
+distmat = np.sqrt(kmS.dot(km.T))
+#distmat = distance.pdist(kmercount, 'mahalanobis')
