@@ -11,7 +11,7 @@ for ident in idents:
     f = open('proteins/' + ident)
     f.readline()
     pseq = ''.join(s.strip() for s in f.readlines())
-    kmerlist = [pseq[i:i+4] for i in xrange(len(pseq) - 3)]
+    kmerlist = [pseq[i:i+3] for i in xrange(len(pseq) - 2)]
     kmerlists[ident] = kmerlist
     kmerset.update(kmerlist)
 
@@ -25,10 +25,13 @@ for ident in idents:
     kmercount[ident].iloc[:len(col_kmercount)] = col_kmercount
 
 kmercount = np.array(kmercount, np.float32)
+import scipy.sparse
+kmercount = scipy.sparse.csc_matrix(kmercount)
 print 'Calculating distance matrix...'
-S = np.cov(kmercount.T)
+km = kmercount - kmercount.mean(1)
+norm = kmercount.shape[1] - 1
+S = np.dot(km, km.T) / norm
 S1 = np.linalg.inv(S).astype(np.float32)
-km = kmercount - kmercount.mean(axis=1)[:,None]
-kmS = km.dot(S1)
-distmat = np.sqrt(kmS.dot(km.T))
-#distmat = distance.pdist(kmercount, 'mahalanobis')
+distmat = km.T.dot(S1).dot(km) # Mahalanobis distance
+import cPickle
+cPickle.dump(distmat, open('distmat.pkl', 'wb'))
