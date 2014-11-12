@@ -32,3 +32,4 @@ tree = open('hclust-4mer.tree', 'w')
 # Every node but the root (node len(clusters)-1) has a parent
 for clust in xrange(len(clusters)-1):
     print >> tree, children.index(clust) / 2
+print >> tree, -1
