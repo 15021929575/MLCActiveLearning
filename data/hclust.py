@@ -2,7 +2,7 @@ import cPickle
 import numpy as np
 import scipy.spatial.distance
 
-distmat = cPickle.load(open('distmat-3mer.pkl'))
+distmat = cPickle.load(open('distmat-4mer.pkl'))
 if len(distmat.shape) == 1:
     distmat = scipy.spatial.distance.squareform(distmat)
 distmat[range(len(distmat)), range(len(distmat))] = np.inf
@@ -28,7 +28,7 @@ while len(cur_clusters) > 1:
     cur_clusters.append(len(clusters) - 1)
     children += [clust_x, clust_y]
 
-tree = open('hclust-3mer.tree', 'w')
+tree = open('hclust-4mer.tree', 'w')
 # Every node but the root (node len(clusters)-1) has a parent
 for clust in xrange(len(clusters)-1):
     print >> tree, children.index(clust) / 2
