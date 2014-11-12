@@ -3,4 +3,4 @@ LDFLAGS = -lm
 sample: sample.o spatial.o
 	$(CXX) -o $@ $+ $(LDFLAGS)
 clean:
-	rm -f *.o sample
+	rm -f *.o sample.out
