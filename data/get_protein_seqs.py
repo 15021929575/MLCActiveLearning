@@ -3,7 +3,7 @@ Bio.Entrez.email = 'ringwalt@cmu.edu'
 import cPickle
 proteins = cPickle.load(open('proteins.pkl'))
 
-eg = proteins.keys()
+eg = set(proteins.keys()).difference([''])
 results = Bio.Entrez.read(Bio.Entrez.elink(db_from='gene', id=eg, linkname='gene_protein'))
 protein_ids = [r['LinkSetDb'][0]['Link'][-1]['Id']
                  if len(r['LinkSetDb'])

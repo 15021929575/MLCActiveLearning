@@ -18,15 +18,17 @@ for horf, v in proteins_orig.iteritems():
                     data=dict(by='plate', limit='', qlist=horf_id))
     lines = result.iter_lines()
     lines.next() # initial blank line
-    header = lines.next().strip().split()
+    header = lines.next().strip().split('\t')
     position_col = header.index('Resource_Position')
     entrez_col = header.index('ENTREZ_GENE_ID')
     for line in lines:
-        line = line.strip().split()
+        line = line.strip().split('\t')
         if line[position_col] == position:
             proteins[line[entrez_col]] = v
             break
-    time.sleep(1)
+    else:
+        import pdb
+        pdb.set_trace()
 
 import cPickle
 cPickle.dump(proteins, open('proteins.pkl', 'wb'))
