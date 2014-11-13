@@ -1,4 +1,6 @@
 #! /usr/bin/env python
+"""Creates a binary label file for every label
+"""
 
 import sys, os
 
