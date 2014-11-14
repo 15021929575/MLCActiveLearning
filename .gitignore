@@ -1,3 +1,10 @@
 *.o
 *.out
 *.pyc
+
+# Ignore files in test_data
+test_data/**
+
+# Except labels and tree files
+!test_data/labels
+!test_data/tree
