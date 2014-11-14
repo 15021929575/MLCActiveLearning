@@ -36,3 +36,16 @@ def recall(predicted_multilabels, actual_multilabels):
         R += float(len(predicted_labels.intersection(actual_labels))) / \
              len(actual_labels)
     return R / data_size
+
+def evaluate(all_predicted_multilabels, actual_multilabels, num_labels):
+    evaluations = {}
+    methods = [("Hamming Loss", lambda p, a: hamming_loss(p, a, num_labels)),
+               ("Accuracy", accuracy),
+               ("Precision", precision),
+               ("Recall", recall)]
+    for (name, method) in methods:
+        evaluations[name] = {}
+        for iteration in all_predicted_multilabels:
+            evaluations[name][iteration] = method(all_predicted_multilabels[iteration],
+                actual_multilabels)
+    return evaluations
