@@ -1,6 +1,6 @@
 from utils import *
 from evaluations import evaluate
-from numpy.random import permutation
+from numpy.random import choice, binomial
 
 def multilabels_to_binary_labels(multilabels, num_labels):
     data_size = len(multilabels)
@@ -13,6 +13,12 @@ def multilabels_to_binary_labels(multilabels, num_labels):
                 binary_labels[label][data] = 0
     return binary_labels
 
+def random_label_subset(num_labels):
+    while True:
+        subset = set(choice(num_labels, binomial(num_labels, 0.5)).tolist())
+        if not len(subset) == 0:
+            return subset
+
 def binary_labels_to_multilabels(binary_labels):
     data_size = len(binary_labels[0])
     num_labels = len(binary_labels)
@@ -24,7 +30,7 @@ def binary_labels_to_multilabels(binary_labels):
                 multilabels[data].add(label)
         # TENTATIVE -- If no labels are found, pick a random subset
         if len(multilabels[data]) == 0:
-            multilabels[data] = set(permutation(range(num_labels)).tolist())
+            multilabels[data] = random_label_subset(num_labels)
     return multilabels
 
 def main():
