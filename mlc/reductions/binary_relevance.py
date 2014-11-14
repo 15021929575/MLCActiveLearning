@@ -31,7 +31,7 @@ def main():
     import os
     
     current_path = os.path.dirname(os.path.realpath(__file__)) # Path of this file
-    output_path = os.path.join(current_path, "../test_data")
+    output_path = os.path.join(current_path, "../../test_data")
 
     (multilabels_file_path, tree_file_path) = get_default_paths(output_path)
     num_labels = 4

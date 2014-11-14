@@ -57,7 +57,7 @@ def dh(num_labels, tree_file_path, labels, output_path,
     labels_file_path = os.path.join(output_path, "labels")
     write_singlelabels_file(labels, labels_file_path)
     current_path = os.path.dirname(os.path.realpath(__file__)) # Path of this file
-    dh_path = os.path.join(current_path, "../DH/sample.out")
+    dh_path = os.path.join(current_path, "../../DH/sample.out")
     dh_output_filename_prefix = "predictions_at_iteration_"
     dh_output_prefix = os.path.join(output_path, dh_output_filename_prefix)
     command = [dh_path,
