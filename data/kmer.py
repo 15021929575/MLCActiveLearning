@@ -3,6 +3,8 @@ import pandas
 import numpy as np
 from scipy.spatial import distance
 
+KMERSIZE = 3
+
 kmerset = set()
 
 idents = sorted(os.listdir('proteins'))
@@ -11,7 +13,7 @@ for ident in idents:
     f = open('proteins/' + ident)
     f.readline()
     pseq = ''.join(s.strip() for s in f.readlines())
-    kmerlist = [pseq[i:i+4] for i in xrange(len(pseq) - 3)]
+    kmerlist = [pseq[i:i+KMERSIZE] for i in xrange(len(pseq) - (KMERSIZE-1))]
     kmerlists[ident] = kmerlist
     kmerset.update(kmerlist)
 
@@ -39,4 +41,4 @@ S1 = np.linalg.pinv(S) # pseudo-inverse
 import scipy.spatial.distance
 distmat = scipy.spatial.distance.pdist(kmercount.T, 'mahalanobis', VI=S1)
 import cPickle
-cPickle.dump(distmat, open('distmat-4mer.pkl', 'wb'))
+cPickle.dump(distmat, open('distmat-%dmer.pkl' % KMERSIZE, 'wb'))
