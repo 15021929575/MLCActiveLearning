@@ -1,6 +1,7 @@
 from utils import *
 from evaluations import evaluate
-from numpy.random import choice, binomial
+from random import randint
+import os
 
 def multilabels_to_binary_labels(multilabels, num_labels):
     data_size = len(multilabels)
@@ -13,12 +14,6 @@ def multilabels_to_binary_labels(multilabels, num_labels):
                 binary_labels[label][data] = 0
     return binary_labels
 
-def random_label_subset(num_labels):
-    while True:
-        subset = set(choice(num_labels, binomial(num_labels, 0.5)).tolist())
-        if not len(subset) == 0:
-            return subset
-
 def binary_labels_to_multilabels(binary_labels):
     data_size = len(binary_labels[0])
     num_labels = len(binary_labels)
@@ -28,14 +23,12 @@ def binary_labels_to_multilabels(binary_labels):
         for label in xrange(num_labels):
             if binary_labels[label][data] == 1:
                 multilabels[data].add(label)
-        # TENTATIVE -- If no labels are found, pick a random subset
+        # TENTATIVE -- If no labels are found, pick a random single label
         if len(multilabels[data]) == 0:
-            multilabels[data] = random_label_subset(num_labels)
+            multilabels[data] = set([randint(1, num_labels)])
     return multilabels
 
 def main():
-    import os
-    
     current_path = os.path.dirname(os.path.realpath(__file__)) # Path of this file
     output_path = os.path.join(current_path, "../../test_data")
 
