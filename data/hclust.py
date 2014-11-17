@@ -2,7 +2,7 @@ import cPickle
 import numpy as np
 import scipy.spatial.distance
 
-KMERSIZE=3
+KMERSIZE=4
 
 distmat = cPickle.load(open('distmat-%dmer.pkl' % KMERSIZE))
 if len(distmat.shape) == 1:

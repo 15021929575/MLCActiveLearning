@@ -3,7 +3,7 @@ import pandas
 import numpy as np
 from scipy.spatial import distance
 
-KMERSIZE = 3
+KMERSIZE = 4
 
 kmerset = set()
 
