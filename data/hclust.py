@@ -1,22 +1,35 @@
 import cPickle
 import numpy as np
-import scipy.spatial.distance
+import scipy.spatial.distance as ssd
 import os
 import re
+
+DISTMAT_NAME = '10mer-seuclidean'
 
 proteins = cPickle.load(open('proteins.pkl'))
 all_proteins = sorted(os.listdir('proteins'))
 protein_labeled_mask = np.array([len(proteins[p].difference([''])) != 0
                         for p in all_proteins])
+orig_distmat = cPickle.load(open('distmats/distmat-%s.pkl' % DISTMAT_NAME))
+if len(orig_distmat.shape) == 1:
+    orig_distmat = ssd.squareform(orig_distmat)
+orig_distmat = orig_distmat[protein_labeled_mask][:, protein_labeled_mask]
+orig_distmat[range(len(orig_distmat)), range(len(orig_distmat))] = np.inf
 
-for distmat_file in os.listdir('distmats'):
-    distmat_name = re.match(r'distmat-(.+?)\.pkl', distmat_file).group(1)
-    distmat = cPickle.load(open('distmats/' + distmat_file))
-    if len(distmat.shape) == 1:
-        distmat = scipy.spatial.distance.squareform(distmat)
-    distmat = distmat[protein_labeled_mask][:, protein_labeled_mask]
-    distmat[range(len(distmat)), range(len(distmat))] = np.inf
+def new_features():
+    """ XXX: Remove """
+    return np.zeros((1, len(orig_distmat)))
 
+def new_distmat():
+    newfeat_dist = ssd.squareform(ssd.pdist(new_features(), 'seuclidean'))
+    # This is equivalent to adding new features when calculating the
+    # original distance, assuming Euclidean distance
+    new_dists = np.sqrt(orig_distmat**2 + newfeat_dist**2)
+    new_dists[range(len(new_dists)), range(len(new_dists))] = np.inf
+    return new_dists
+
+def get_clustering():
+    distmat = new_distmat()
     clusters = [[i] for i in xrange(len(distmat))]
     centroids = range(len(distmat))
     cur_clusters = range(len(distmat))
@@ -37,9 +50,12 @@ for distmat_file in os.listdir('distmats'):
         cur_clusters.remove(clust_y)
         cur_clusters.append(len(clusters) - 1)
         children += [clust_x, clust_y]
+    # Every node but the root (node len(clusters)-1) has a parent
+    return [children.index(clust) / 2 for clust in xrange(len(clusters)-1)]
 
-    tree = open('hclusts/hclust-%s.tree' % distmat_name, 'w')
-# Every node but the root (node len(clusters)-1) has a parent
-    for clust in xrange(len(clusters)-1):
-        print >> tree, children.index(clust) / 2
+if __name__ == '__main__':
+    tree = open('hclusts/hclust-%s.tree' % DISTMAT_NAME, 'w')
+    clustering = get_clustering()
+    for parent in clustering:
+        print >> tree, parent
     print >> tree, -1
