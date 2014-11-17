@@ -5,7 +5,7 @@ import os
 # running this and kmer.py!
 
 proteins = cPickle.load(open('proteins.pkl'))
-output = open('hclust.labels', 'w')
+output = open('hclusts/hclust.labels', 'w')
 
 distmat_ids = sorted(os.listdir('proteins'))
 
