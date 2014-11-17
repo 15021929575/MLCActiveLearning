@@ -9,32 +9,22 @@
 11179	intracellular	nucleus
 114034	nuclear speck	nucleus
 1196	nuclear speck	nucleus
-126133
 129138	cytoplasm	midbody	nucleus
 129807	lysosomal lumen	lysosome	membrane	mitochondrion	organelle inner membrane
 129831	cytoplasm	nucleus
-139212
 143384	cullin-RING ubiquitin ligase complex
-143684
 144203	extracellular region
 146310	cytoplasm	nucleus
 146542	cellular_component	intracellular	nucleus
 149628	nuclear speck	nucleoplasm	nucleus
-151613
 151871	nucleus
 152877	nucleus
 1535	Golgi apparatus	NADPH oxidase complex	apical plasma membrane	cytoplasm	dendrite	membrane	mitochondrion	neuronal cell body	phagocytic vesicle membrane	secretory granule
-164127
-164592
 170261	above
 1912	PRC1 complex	PcG protein complex	nucleus
-200845
 202051	cytoplasm	nucleolus	nucleoplasm	nucleus
 202559	nucleus
-222698
 22890	intracellular	nucleus
-23199
-23254
 23435	nucleus
 2353	host cell nucleus
 23543	cytoplasm	nucleus
@@ -53,11 +43,9 @@
 3104	cytoplasm	intracellular	nucleus
 331	cytoplasm	cytosol	intracellular	nucleus
 339745	nucleus
-339834
 342132	intracellular	nucleus
 3550	nucleus
 3609	cytoplasm	intracellular	mitochondrion	nucleolus	nucleus	ribonucleoprotein complex
-391257
 4001	intermediate filament	lamin filament	membrane	nuclear envelope	nuclear inner membrane	nuclear matrix	nucleoplasm	nucleus
 4154	cytoplasm	cytoplasmic stress granule	nucleus
 4234	cytoplasm	intracellular membrane-bounded organelle	nucleus
@@ -69,12 +57,9 @@
 51224	integral to membrane	nucleus
 51329	nucleus
 51514	Cul4A-RING ubiquitin ligase complex	Cul4B-RING ubiquitin ligase complex	centrosome	cytoplasm	cytoskeleton	membrane	microtubule organizing center	nuclear membrane	nucleus
-51631
 5371	PML body	cytoplasm	cytosol	early endosome membrane	endoplasmic reticulum	endosome	extrinsic to endoplasmic reticulum membrane	insoluble fraction	intracellular	membrane	nuclear matrix	nuclear membrane	nucleolus	nucleoplasm	nucleus
 5450	nucleus
 54765	intracellular
-54819
-54980
 55068	extracellular regio	extracellular space	membrane	plasma membrane
 55122	nucleus	transcriptional repressor complex
 55135	Cajal body	cytoplasm	nucleus	telomerase holoenzyme complex
@@ -92,11 +77,9 @@
 55954	U12-type spliceosomal complex	cytoplasm	nucleus	spliceosomal complex
 5684	cytoplasm	cytosol	nucleoplasm	nucleus	proteasome complex	proteasome core complex
 57018	nuclear speck	nucleus
-57035
 5725	heterogeneous nuclear ribonucleoprotein complex	nucleolus	nucleoplasm	nucleus
 57410	COPI vesicle coat	Golgi apparatus	cis-Golgi network	cytoplasm	cytoskeleton	endoplasmic reticulum-Golgi intermediate compartment	microtubule organizing center	nucleus
 57541	intracellular	nucleus
-57654
 58155	nucleus	spliceosomal complex
 58499	intracellular	nucleus
 5932	nucleus	transcriptional repressor complex
@@ -105,7 +88,6 @@
 64376	intracellular	nucleus
 64949	mitochondrial small ribosomal subunit	mitochondrion	ribonucleoprotein complex	ribosome
 64976	mitochondrial ribosome	mitochondrion	nucleus	ribonucleoprotein complex	ribosome
-653140
 6613	nucleus
 6615	cytoplasm	intracellular	nucleus
 6629	U2 snRNP	catalytic step 2 spliceosome	nucleoplasm	nucleus	ribonucleoprotein complex	spliceosomal complex
@@ -121,9 +103,7 @@
 7586	intracellular	mitochondrion	nucleus
 7690	intracellular	nucleus
 7746	intracellular	nucleus
-79091
 79576	cytoplasm	nucleus
-79607
 79643	cytosol	endosome	endosome membrane	late endosome membrane	membrane
 79654	cytoplasm	intracellular	nucleus	perinuclear region of cytoplasm
 79723	chromatin	chromosome	chromosome, centromeric region	nuclear heterochromatin
@@ -131,18 +111,13 @@
 79848	centrosome	cytoplasm	cytoskeleton	microtubule	microtubule organizing center	spindle	spindle pole
 79891	intracellular	nucleus
 79982	integral to membrane	membrane
-80028
 8061	cytosol	microsome	nucleus	presynaptic membrane	synaptosome
 80726	mitochondrion
 81565	axon	cell body	cell leading edge	centrosome	chromosome	chromosome, centromeric region	condensed chromosome kinetochore	cytoplasm	cytoskeleton	cytosol	kinesin complex	kinetochore	microtubule	microtubule associated complex	microtubule organizing center	nuclear envelope	spindle
 8161	Cajal body	nucleolus	nucleoplasm	nucleus
-81788
-8227
 83463	nucleus
 83759	nucleolus	nucleus
-83786
 8379	actin cytoskeleton	centrosome	chromosome	chromosome, centromeric region	condensed chromosome kinetochore	cytoplasm	cytoskeleton	cytosol	kinetochore	microtubule organizing center	mitochondrion	nuclear pore	nucleus	spindle
-83861
 84248	nuclear speck	nucleoplasm	nucleus
 84324	nucleus
 84524	nucleus
@@ -156,14 +131,11 @@
 84878	intracellular	nucleus
 8498	cytoplasm	nucleus
 8517	IkappaB kinase complex	cytoplasm	cytosol	intracellular	nucleus
-85376
 8761	cytoplasm	ribonucleoprotein complex
 9295	nucleoplasm	nucleus
 9314	intracellular	nuclear chromatin	nucleus
 9360	cytoplasm	nuclear matrix	nuclear speck	nucleoplasm	nucleus
 9441	mediator complex	nucleoplasm	nucleus
 9679	cellular_component
-9721
 9753	intracellular	nucleus
 9810	HULC complex	cytoplasm	nucleus	plasma membrane	protein complex	synaptosome	ubiquitin ligase complex
-9877

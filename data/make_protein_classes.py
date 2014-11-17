@@ -11,4 +11,5 @@ distmat_ids = sorted(os.listdir('proteins'))
 
 for id in distmat_ids:
     locations = proteins[id].difference([''])
-    print >> output, '\t'.join([id] + sorted(locations))
+    if locations:
+        print >> output, '\t'.join([id] + sorted(locations))

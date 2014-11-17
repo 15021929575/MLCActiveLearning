@@ -4,11 +4,17 @@ import scipy.spatial.distance
 import os
 import re
 
+proteins = cPickle.load(open('proteins.pkl'))
+all_proteins = sorted(os.listdir('proteins'))
+protein_labeled_mask = np.array([len(proteins[p].difference([''])) != 0
+                        for p in all_proteins])
+
 for distmat_file in os.listdir('distmats'):
     distmat_name = re.match(r'distmat-(.+?)\.pkl', distmat_file).group(1)
     distmat = cPickle.load(open('distmats/' + distmat_file))
     if len(distmat.shape) == 1:
         distmat = scipy.spatial.distance.squareform(distmat)
+    distmat = distmat[protein_labeled_mask][:, protein_labeled_mask]
     distmat[range(len(distmat)), range(len(distmat))] = np.inf
 
     clusters = [[i] for i in xrange(len(distmat))]
