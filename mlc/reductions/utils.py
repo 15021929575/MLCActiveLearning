@@ -52,6 +52,9 @@ def get_default_paths(directory_path):
     return (os.path.join(directory_path, "labels"),
             os.path.join(directory_path, "tree"))
 
+def dict_to_list(dict):
+    return [ dict[k] for k in xrange(1, len(dict) + 1) ]
+
 def dh(num_labels, tree_file_path, labels, output_path,
        seed=42, select_type=1, period=100):
     labels_file_path = os.path.join(output_path, "labels")

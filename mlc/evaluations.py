@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+from reductions.utils import dict_to_list
+
 def hamming_loss(predicted_multilabels, actual_multilabels, num_labels):
     HL = 0.0
     data_size = len(predicted_multilabels)
@@ -49,3 +52,12 @@ def evaluate(all_predicted_multilabels, actual_multilabels, num_labels):
             evaluations[name][iteration] = method(all_predicted_multilabels[iteration],
                 actual_multilabels)
     return evaluations
+
+def plot_evaluations(evaluations, metrics):
+    for metric in metrics:
+        for name, (color, evaluation) in evaluations.items():
+            plt.plot(dict_to_list(evaluation[metric]), label=name, color=color)
+        plt.xlabel("Number of queries")
+        plt.ylabel(metric)
+        plt.legend()
+        plt.show()
