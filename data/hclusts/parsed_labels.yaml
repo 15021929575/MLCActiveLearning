@@ -1,0 +1,199 @@
+'10346': !!set {Cajal body: null, Golgi apparatus: null, cytoplasm: null, intracellular: null,
+  intracellular membrane-bounded organelle: null, nuclear speck: null}
+'10432': !!set {mediator complex: null, nucleus: null, ribonucleoprotein complex: null,
+  transcription factor complex: null}
+'10474': !!set {Ada2/Gcn5/Ada3 transcription activator complex: null, STAGA complex: null,
+  intracellular: null, nucleus: null, transcription factor TFTC complex: null}
+'10656': !!set {nucleus: null}
+'10921': !!set {cytoplasm: null, cytosol: null, exon-exon junction complex: null,
+  nuclear speck: null, nucleoplasm: null, nucleus: null}
+'11047': !!set {cytoplasm: null, integral to plasma membrane: null, membrane fraction: null,
+  nucleus: null, plasma membrane: null, proteasome complex: null}
+'11052': !!set {mRNA cleavage factor complex: null, nucleus: null, paraspeckles: null,
+  ribonucleoprotein complex: null}
+'11103': !!set {cytoplasm: null, nucleolus: null, nucleus: null, ribonucleoprotein complex: null}
+'11179': !!set {intracellular: null, nucleus: null}
+'114034': !!set {nuclear speck: null, nucleus: null}
+'1196': !!set {nuclear speck: null, nucleus: null}
+'129138': !!set {cytoplasm: null, midbody: null, nucleus: null}
+'129807': !!set {lysosomal lumen: null, lysosome: null, membrane: null, mitochondrion: null,
+  organelle inner membrane: null}
+'129831': !!set {cytoplasm: null, nucleus: null}
+'143384': !!set {cullin-RING ubiquitin ligase complex: null}
+'144203': !!set {extracellular region: null}
+'146310': !!set {cytoplasm: null, nucleus: null}
+'146542': !!set {cellular_component: null, intracellular: null, nucleus: null}
+'149628': !!set {nuclear speck: null, nucleoplasm: null, nucleus: null}
+'151871': !!set {nucleus: null}
+'152877': !!set {nucleus: null}
+'1535': !!set {Golgi apparatus: null, NADPH oxidase complex: null, apical plasma membrane: null,
+  cytoplasm: null, dendrite: null, membrane: null, mitochondrion: null, neuronal cell body: null,
+  phagocytic vesicle membrane: null, secretory granule: null}
+'170261': !!set {above: null}
+'1912': !!set {PRC1 complex: null, PcG protein complex: null, nucleus: null}
+'202051': !!set {cytoplasm: null, nucleolus: null, nucleoplasm: null, nucleus: null}
+'202559': !!set {nucleus: null}
+'22890': !!set {intracellular: null, nucleus: null}
+'23435': !!set {nucleus: null}
+'2353': !!set {host cell nucleus: null}
+'23543': !!set {cytoplasm: null, nucleus: null}
+'2355': !!set {nucleus: null}
+'23567': !!set {cytoplasm: null, intracellular: null, nucleolus: null, nucleus: null}
+'24144': !!set {catalytic step 2 spliceosome: null, cytoplasm: null, nuclear speck: null,
+  nucleus: null, proteinaceous extracellular matrix: null, spliceosomal complex: null}
+'25776': !!set {Golgi apparatus: null, microtubule basal body: null, nuclear speck: null,
+  nucleus: null, trans-Golgi network: null}
+'25970': !!set {cytoplasm: null, cytosol: null, membrane: null, nucleus: null}
+'25983': !!set {axon: null, cell projection: null, cytoplasm: null, dendrite: null,
+  filopodium: null, nucleus: null}
+'26036': !!set {intracellular: null, nucleus: null}
+'2623': !!set {nuclear membrane: null, nucleolus: null, nucleoplasm: null, nucleus: null,
+  transcription factor complex: null, transcriptional repressor complex: null}
+'27296': !!set {cytoplasm: null, intracellular: null, nucleus: null}
+'283899': !!set {Ino80 complex: null, nucleolus: null, nucleus: null}
+'29108': !!set {IkappaB kinase complex: null, cytoplasm: null, cytoplasmic part: null,
+  cytosol: null, intracellular: null}
+'2962': !!set {cell junction: null, nucleoplasm: null, nucleus: null, transcription factor TFIIF complex: null}
+'3104': !!set {cytoplasm: null, intracellular: null, nucleus: null}
+'331': !!set {cytoplasm: null, cytosol: null, intracellular: null, nucleus: null}
+'339745': !!set {nucleus: null}
+'342132': !!set {intracellular: null, nucleus: null}
+'3550': !!set {nucleus: null}
+'3609': !!set {cytoplasm: null, intracellular: null, mitochondrion: null, nucleolus: null,
+  nucleus: null, ribonucleoprotein complex: null}
+'4001': !!set {intermediate filament: null, lamin filament: null, membrane: null,
+  nuclear envelope: null, nuclear inner membrane: null, nuclear matrix: null, nucleoplasm: null,
+  nucleus: null}
+'4154': !!set {cytoplasm: null, cytoplasmic stress granule: null, nucleus: null}
+'4234': !!set {cytoplasm: null, intracellular membrane-bounded organelle: null, nucleus: null}
+'4665': !!set {nucleus: null}
+'4747': !!set {TSC1-TSC2 complex: null, axon: null, cytosol: null, intermediate filament: null,
+  neurofilament: null}
+'4800': !!set {CCAAT-binding factor complex: null, nucleus: null}
+'4841': !!set {nuclear matrix: null, nuclear speck: null, nucleus: null, paraspeckles: null}
+'51083': !!set {Golgi apparatus: null, cellular_component: null, cytoplasm: null,
+  extracellular region: null, secretory granule: null}
+'51224': !!set {integral to membrane: null, nucleus: null}
+'51329': !!set {nucleus: null}
+'51514': !!set {Cul4A-RING ubiquitin ligase complex: null, Cul4B-RING ubiquitin ligase complex: null,
+  centrosome: null, cytoplasm: null, cytoskeleton: null, membrane: null, microtubule organizing center: null,
+  nuclear membrane: null, nucleus: null}
+'5371': !!set {PML body: null, cytoplasm: null, cytosol: null, early endosome membrane: null,
+  endoplasmic reticulum: null, endosome: null, extrinsic to endoplasmic reticulum membrane: null,
+  insoluble fraction: null, intracellular: null, membrane: null, nuclear matrix: null,
+  nuclear membrane: null, nucleolus: null, nucleoplasm: null, nucleus: null}
+'5450': !!set {nucleus: null}
+'54765': !!set {intracellular: null}
+'55068': !!set {extracellular regio: null, extracellular space: null, membrane: null,
+  plasma membrane: null}
+'55122': !!set {nucleus: null, transcriptional repressor complex: null}
+'55135': !!set {Cajal body: null, cytoplasm: null, nucleus: null, telomerase holoenzyme complex: null}
+'55147': !!set {nucleus: null}
+'55269': !!set {cytoplasm: null, nuclear matrix: null, nucleolus: null, nucleoplasm: null,
+  nucleus: null, paraspeckles: null}
+'55272': !!set {nucleolus: null, nucleus: null, ribonucleoprotein complex: null}
+'55311': !!set {intracellular: null, nucleus: null}
+'553115': !!set {cytoplasm: null, membrane: null}
+'55536': !!set {cytoplasm: null, nucleolus: null, nucleus: null}
+'55692': !!set {nucleus: null}
+'55758': !!set {nucleus: null}
+'55783': !!set {integral to membrane: null, membrane: null}
+'55840': !!set {nuclear speck: null, nucleus: null}
+'55900': !!set {intracellular: null, nucleus: null}
+'55954': !!set {U12-type spliceosomal complex: null, cytoplasm: null, nucleus: null,
+  spliceosomal complex: null}
+'5684': !!set {cytoplasm: null, cytosol: null, nucleoplasm: null, nucleus: null, proteasome complex: null,
+  proteasome core complex: null}
+'57018': !!set {nuclear speck: null, nucleus: null}
+'5725': !!set {heterogeneous nuclear ribonucleoprotein complex: null, nucleolus: null,
+  nucleoplasm: null, nucleus: null}
+'57410': !!set {COPI vesicle coat: null, Golgi apparatus: null, cis-Golgi network: null,
+  cytoplasm: null, cytoskeleton: null, endoplasmic reticulum-Golgi intermediate compartment: null,
+  microtubule organizing center: null, nucleus: null}
+'57541': !!set {intracellular: null, nucleus: null}
+'58155': !!set {nucleus: null, spliceosomal complex: null}
+'58499': !!set {intracellular: null, nucleus: null}
+'5932': !!set {nucleus: null, transcriptional repressor complex: null}
+'6166': !!set {cytoplasm: null, intracellular: null, ribonucleoprotein complex: null,
+  ribosome: null}
+'64219': !!set {cytoplasm: null}
+'64376': !!set {intracellular: null, nucleus: null}
+'64949': !!set {mitochondrial small ribosomal subunit: null, mitochondrion: null,
+  ribonucleoprotein complex: null, ribosome: null}
+'64976': !!set {mitochondrial ribosome: null, mitochondrion: null, nucleus: null,
+  ribonucleoprotein complex: null, ribosome: null}
+'6613': !!set {nucleus: null}
+'6615': !!set {cytoplasm: null, intracellular: null, nucleus: null}
+'6629': !!set {U2 snRNP: null, catalytic step 2 spliceosome: null, nucleoplasm: null,
+  nucleus: null, ribonucleoprotein complex: null, spliceosomal complex: null}
+'6632': !!set {U12-type spliceosomal complex: null, cytoplasm: null, cytosol: null,
+  nucleoplasm: null, nucleus: null, spliceosomal complex: null}
+'6635': !!set {U12-type spliceosomal complex: null, U7 snRNP: null, catalytic step 2 spliceosome: null,
+  cytosol: null, nucleoplasm: null, nucleus: null, ribonucleoprotein complex: null,
+  small nuclear ribonucleoprotein complex: null, spliceosomal complex: null}
+'6637': !!set {U12-type spliceosomal complex: null, U7 snRNP: null, catalytic step 2 spliceosome: null,
+  cytosol: null, nucleoplasm: null, nucleus: null, ribonucleoprotein complex: null,
+  small nuclear ribonucleoprotein complex: null, spliceosomal complex: null}
+'6638': !!set {nucleus: null, ribonucleoprotein complex: null, small nuclear ribonucleoprotein complex: null,
+  spliceosomal complex: null}
+'6839': !!set {chromatin silencing complex: null, chromosome: null, 'chromosome, centromeric region': null,
+  condensed nuclear chromosome: null, heterochromatin: null, nucleus: null, rDNA heterochrom: null}
+'7050': !!set {nucleus: null}
+'7090': !!set {nucleus: null}
+'728929': !!set {integral to membrane: null, nucleus: null}
+'7572': !!set {intracellular: null, nucleus: null}
+'7586': !!set {intracellular: null, mitochondrion: null, nucleus: null}
+'7690': !!set {intracellular: null, nucleus: null}
+'7746': !!set {intracellular: null, nucleus: null}
+'79576': !!set {cytoplasm: null, nucleus: null}
+'79643': !!set {cytosol: null, endosome: null, endosome membrane: null, late endosome membrane: null,
+  membrane: null}
+'79654': !!set {cytoplasm: null, intracellular: null, nucleus: null, perinuclear region of cytoplasm: null}
+'79723': !!set {chromatin: null, chromosome: null, 'chromosome, centromeric region': null,
+  nuclear heterochromatin: null}
+'79802': !!set {extracellular region: null}
+'79848': !!set {centrosome: null, cytoplasm: null, cytoskeleton: null, microtubule: null,
+  microtubule organizing center: null, spindle: null, spindle pole: null}
+'79891': !!set {intracellular: null, nucleus: null}
+'79982': !!set {integral to membrane: null, membrane: null}
+'8061': !!set {cytosol: null, microsome: null, nucleus: null, presynaptic membrane: null,
+  synaptosome: null}
+'80726': !!set {mitochondrion: null}
+'81565': !!set {axon: null, cell body: null, cell leading edge: null, centrosome: null,
+  chromosome: null, 'chromosome, centromeric region': null, condensed chromosome kinetochore: null,
+  cytoplasm: null, cytoskeleton: null, cytosol: null, kinesin complex: null, kinetochore: null,
+  microtubule: null, microtubule associated complex: null, microtubule organizing center: null,
+  nuclear envelope: null, spindle: null}
+'8161': !!set {Cajal body: null, nucleolus: null, nucleoplasm: null, nucleus: null}
+'83463': !!set {nucleus: null}
+'83759': !!set {nucleolus: null, nucleus: null}
+'8379': !!set {actin cytoskeleton: null, centrosome: null, chromosome: null, 'chromosome, centromeric region': null,
+  condensed chromosome kinetochore: null, cytoplasm: null, cytoskeleton: null, cytosol: null,
+  kinetochore: null, microtubule organizing center: null, mitochondrion: null, nuclear pore: null,
+  nucleus: null, spindle: null}
+'84248': !!set {nuclear speck: null, nucleoplasm: null, nucleus: null}
+'84324': !!set {nucleus: null}
+'84524': !!set {nucleus: null}
+'84549': !!set {nucleus: null}
+'84619': !!set {nucleus: null}
+'84733': !!set {PRC1 complex: null, PcG protein complex: null, heterochromatin: null,
+  nucleus: null}
+'84811': !!set {RES complex: null}
+'84823': !!set {intermediate filament: null, lamin filament: null, membrane: null,
+  nuclear inner membrane: null, nuclear lamina: null, nucleus: null}
+'84838': !!set {intracellular: null, nuclear body: null, nucleus: null}
+'84858': !!set {intracellular: null, nucleus: null}
+'84878': !!set {intracellular: null, nucleus: null}
+'8498': !!set {cytoplasm: null, nucleus: null}
+'8517': !!set {IkappaB kinase complex: null, cytoplasm: null, cytosol: null, intracellular: null,
+  nucleus: null}
+'8761': !!set {cytoplasm: null, ribonucleoprotein complex: null}
+'9295': !!set {nucleoplasm: null, nucleus: null}
+'9314': !!set {intracellular: null, nuclear chromatin: null, nucleus: null}
+'9360': !!set {cytoplasm: null, nuclear matrix: null, nuclear speck: null, nucleoplasm: null,
+  nucleus: null}
+'9441': !!set {mediator complex: null, nucleoplasm: null, nucleus: null}
+'9679': !!set {cellular_component: null}
+'9753': !!set {intracellular: null, nucleus: null}
+'9810': !!set {HULC complex: null, cytoplasm: null, nucleus: null, plasma membrane: null,
+  protein complex: null, synaptosome: null, ubiquitin ligase complex: null}
