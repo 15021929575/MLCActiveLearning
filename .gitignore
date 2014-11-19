@@ -8,3 +8,6 @@ test_data/**
 # Except labels and tree files
 !test_data/labels
 !test_data/tree
+
+predictions_at_iteration*
+label_*

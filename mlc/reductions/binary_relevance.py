@@ -30,10 +30,11 @@ def binary_labels_to_multilabels(binary_labels):
 
 def main():
     current_path = os.path.dirname(os.path.realpath(__file__)) # Path of this file
-    output_path = os.path.join(current_path, "../../test_data")
+    output_path = os.path.join(current_path, "../../data/hclusts/hclust-random")
 
-    (multilabels_file_path, tree_file_path) = get_default_paths(output_path)
-    num_labels = 4
+    (_, tree_file_path) = get_default_paths(output_path)
+    multilabels_file_path = os.path.join(output_path, "../labels")
+    num_labels = 125
 
     multilabels = read_multilabels_file(multilabels_file_path)
     binary_labels = multilabels_to_binary_labels(multilabels, num_labels)
