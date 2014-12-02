@@ -16,20 +16,15 @@ if len(orig_distmat.shape) == 1:
 orig_distmat = orig_distmat[protein_labeled_mask][:, protein_labeled_mask]
 orig_distmat[range(len(orig_distmat)), range(len(orig_distmat))] = np.inf
 
-def new_features():
-    """ XXX: Remove """
-    return np.zeros((1, len(orig_distmat)))
-
-def new_distmat():
-    newfeat_dist = ssd.squareform(ssd.pdist(new_features(), 'seuclidean'))
+def new_distmat(distmat, features):
+    newfeat_dist = ssd.squareform(ssd.pdist(features, 'seuclidean'))
     # This is equivalent to adding new features when calculating the
     # original distance, assuming Euclidean distance
-    new_dists = np.sqrt(orig_distmat**2 + newfeat_dist**2)
+    new_dists = np.sqrt(distmat**2 + newfeat_dist**2)
     new_dists[range(len(new_dists)), range(len(new_dists))] = np.inf
     return new_dists
 
-def get_clustering():
-    distmat = new_distmat()
+def get_clustering(distmat):
     clusters = [[i] for i in xrange(len(distmat))]
     centroids = range(len(distmat))
     cur_clusters = range(len(distmat))
@@ -55,7 +50,7 @@ def get_clustering():
 
 if __name__ == '__main__':
     tree = open('hclusts/hclust-%s.tree' % DISTMAT_NAME, 'w')
-    clustering = get_clustering()
+    clustering = get_clustering(orig_distmat)
     for parent in clustering:
         print >> tree, parent
     print >> tree, -1
