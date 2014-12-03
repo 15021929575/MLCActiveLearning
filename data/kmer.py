@@ -5,7 +5,7 @@ from scipy.spatial import distance
 
 METRICS = ['seuclidean']
 
-for KMERSIZE in range(10, 10):
+for KMERSIZE in range(3, 4):
     idents = sorted(os.listdir('proteins'))
     kmerset = set()
     kmerlists = dict()

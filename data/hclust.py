@@ -4,7 +4,7 @@ import scipy.spatial.distance as ssd
 import os
 import re
 
-DISTMAT_NAME = '10mer-seuclidean'
+DISTMAT_NAME = '3mer-seuclidean'
 
 proteins = cPickle.load(open('proteins.pkl'))
 all_proteins = sorted(os.listdir('proteins'))
