@@ -12,6 +12,6 @@ if len(old_distmat.shape) == 2:
     old_distmat = ssd.squareform(old_distmat)
 
 feats = np.loadtxt(sys.argv[2], delimiter=',')
-featdist = ssd.pdist(feats.T, 'seuclidean')
-new_distmat = old_distmat + feats
+featdist = ssd.pdist(feats, 'seuclidean')
+new_distmat = np.sqrt(old_distmat**2 + featdist**2)
 cPickle.dump(new_distmat, open(sys.argv[3], 'w'))
