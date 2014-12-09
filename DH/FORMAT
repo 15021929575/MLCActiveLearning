@@ -1,7 +1,0 @@
-The tree file is an array p[0,...,2n-2] of parent pointers (i.e., p[i] = parent of node i).
-The leaves are nodes 0,...,n-1, and the internal nodes are nodes n,...,2n-2. The parent of the root node should be -1.
-
-The label file is an array y[0,...,n-1] of labels 0,...,K-1, where K is the number of classes.
-
-See ocr.tree and ocr.labels for examples.
-
