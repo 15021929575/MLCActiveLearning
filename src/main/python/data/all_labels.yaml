@@ -1,0 +1,58 @@
+!!python/object/apply:__builtin__.frozenset
+- [!!python/unicode 'Golgi apparatus', !!python/unicode 'nuclear matrix', !!python/unicode 'cytosol',
+  !!python/unicode 'lysosomal lumen', !!python/unicode 'nuclear body', !!python/unicode 'apical
+    plasma membrane', !!python/unicode 'lysosome', !!python/unicode 'endosome', !!python/unicode 'axon',
+  !!python/unicode 'U7 snRNP', !!python/unicode 'cullin-RING ubiquitin ligase complex',
+  !!python/unicode 'paraspeckles', !!python/unicode 'cell body', !!python/unicode 'spindle',
+  !!python/unicode 'cell projection', !!python/unicode 'plasma membrane', !!python/unicode 'PML
+    body', !!python/unicode 'microtubule', !!python/unicode 'intracellular', !!python/unicode 'endoplasmic
+    reticulum', !!python/unicode 'centrosome', !!python/unicode 'secretory granule',
+  !!python/unicode 'chromosome, centromeric region', !!python/unicode 'cytoplasm',
+  !!python/unicode 'transcription factor complex', !!python/unicode 'kinesin complex',
+  !!python/unicode 'chromatin', !!python/unicode 'mitochondrial small ribosomal subunit',
+  !!python/unicode 'trans-Golgi network', !!python/unicode 'PcG protein complex',
+  !!python/unicode 'membrane', !!python/unicode 'organelle inner membrane', !!python/unicode 'transcription
+    factor TFIIF complex', !!python/unicode 'neuronal cell body', !!python/unicode 'TSC1-TSC2
+    complex', !!python/unicode 'mRNA cleavage factor complex', !!python/unicode 'nuclear
+    membrane', !!python/unicode 'integral to plasma membrane', !!python/unicode 'host
+    cell nucleus', !!python/unicode 'RES complex', !!python/unicode 'nuclear pore',
+  !!python/unicode 'synaptosome', !!python/unicode 'nuclear envelope', !!python/unicode 'ribonucleoprotein
+    complex', !!python/unicode 'CCAAT-binding factor complex', !!python/unicode 'small
+    nuclear ribonucleoprotein complex', !!python/unicode 'spliceosomal complex', !!python/unicode 'cytoplasmic
+    part', !!python/unicode 'endosome membrane', !!python/unicode 'proteasome core
+    complex', !!python/unicode 'late endosome membrane', !!python/unicode 'chromatin
+    silencing complex', !!python/unicode 'transcription factor TFTC complex', !!python/unicode 'cell
+    junction', !!python/unicode 'actin cytoskeleton', !!python/unicode 'microtubule
+    associated complex', !!python/unicode 'early endosome membrane', !!python/unicode 'endoplasmic
+    reticulum-Golgi intermediate compartment', !!python/unicode 'HULC complex', !!python/unicode 'Ada2/Gcn5/Ada3
+    transcription activator complex', !!python/unicode 'COPI vesicle coat', !!python/unicode 'catalytic
+    step 2 spliceosome', !!python/unicode 'nucleoplasm', !!python/unicode 'exon-exon
+    junction complex', !!python/unicode 'U2 snRNP', !!python/unicode 'transcriptional
+    repressor complex', !!python/unicode 'neurofilament', !!python/unicode 'presynaptic
+    membrane', !!python/unicode 'dendrite', !!python/unicode 'cytoplasmic stress granule',
+  !!python/unicode 'intracellular membrane-bounded organelle', !!python/unicode 'cytoskeleton',
+  !!python/unicode 'microtubule organizing center', !!python/unicode 'intermediate
+    filament', !!python/unicode 'chromosome', !!python/unicode 'nuclear speck', !!python/unicode 'kinetochore',
+  !!python/unicode 'Cajal body', !!python/unicode 'STAGA complex', !!python/unicode 'Cul4A-RING
+    ubiquitin ligase complex', !!python/unicode 'ribosome', !!python/unicode 'NADPH
+    oxidase complex', !!python/unicode 'cellular_component', !!python/unicode 'proteasome
+    complex', !!python/unicode 'cell leading edge', !!python/unicode 'Ino80 complex',
+  !!python/unicode 'mitochondrion', !!python/unicode 'above', !!python/unicode 'nuclear
+    inner membrane', !!python/unicode 'nuclear heterochromatin', !!python/unicode 'ubiquitin
+    ligase complex', !!python/unicode 'microtubule basal body', !!python/unicode 'protein
+    complex', !!python/unicode 'integral to membrane', !!python/unicode 'phagocytic
+    vesicle membrane', !!python/unicode 'extracellular space', !!python/unicode 'IkappaB
+    kinase complex', !!python/unicode 'insoluble fraction', !!python/unicode 'cis-Golgi
+    network', !!python/unicode 'condensed chromosome kinetochore', !!python/unicode 'heterochromatin',
+  !!python/unicode 'nucleus', !!python/unicode 'extracellular regio', !!python/unicode 'U12-type
+    spliceosomal complex', !!python/unicode 'Cul4B-RING ubiquitin ligase complex',
+  !!python/unicode 'midbody', !!python/unicode 'heterogeneous nuclear ribonucleoprotein
+    complex', !!python/unicode 'mitochondrial ribosome', !!python/unicode 'lamin filament',
+  !!python/unicode 'PRC1 complex', !!python/unicode 'telomerase holoenzyme complex',
+  !!python/unicode 'membrane fraction', !!python/unicode 'condensed nuclear chromosome',
+  !!python/unicode 'microsome', !!python/unicode 'extrinsic to endoplasmic reticulum
+    membrane', !!python/unicode 'mediator complex', !!python/unicode 'nuclear chromatin',
+  !!python/unicode 'extracellular region', !!python/unicode 'rDNA heterochrom', !!python/unicode 'filopodium',
+  !!python/unicode 'nuclear lamina', !!python/unicode 'perinuclear region of cytoplasm',
+  !!python/unicode 'proteinaceous extracellular matrix', !!python/unicode 'spindle
+    pole', !!python/unicode 'nucleolus']
