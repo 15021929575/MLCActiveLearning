@@ -1,0 +1,38 @@
+{0: Golgi apparatus, 1: lysosome, 2: cytosol, 3: nuclear body, 4: apical plasma membrane,
+  5: microsome, 6: axon, 7: U7 snRNP, 8: Ada2/Gcn5/Ada3 transcription activator complex,
+  9: paraspeckles, 10: cell body, 11: spindle, 12: cell projection, 13: plasma membrane,
+  14: 'chromosome, centromeric region', 15: microtubule, 16: intracellular, 17: endoplasmic
+    reticulum, 18: RES complex, 19: secretory granule, 20: exon-exon junction complex,
+  21: transcription factor complex, 22: PML body, 23: kinesin complex, 24: chromatin,
+  25: mitochondrial small ribosomal subunit, 26: trans-Golgi network, 27: U2 snRNP,
+  28: nuclear inner membrane, 29: organelle inner membrane, 30: transcriptional repressor
+    complex, 31: neuronal cell body, 32: TSC1-TSC2 complex, 33: mRNA cleavage factor
+    complex, 34: nuclear membrane, 35: endosome, 36: nuclear heterochromatin, 37: host
+    cell nucleus, 38: extracellular space, 39: centrosome, 40: nuclear pore, 41: synaptosome,
+  42: nuclear envelope, 43: ribonucleoprotein complex, 44: CCAAT-binding factor complex,
+  45: small nuclear ribonucleoprotein complex, 46: spliceosomal complex, 47: cytoplasmic
+    part, 48: endosome membrane, 49: proteasome core complex, 50: late endosome membrane,
+  51: chromatin silencing complex, 52: transcription factor TFTC complex, 53: cell
+    junction, 54: mitochondrial ribosome, 55: microtubule associated complex, 56: endoplasmic
+    reticulum-Golgi intermediate compartment, 57: HULC complex, 58: cullin-RING ubiquitin
+    ligase complex, 59: COPI vesicle coat, 60: catalytic step 2 spliceosome, 61: nucleoplasm,
+  62: cytoplasm, 63: PcG protein complex, 64: transcription factor TFIIF complex,
+  65: neurofilament, 66: presynaptic membrane, 67: dendrite, 68: cytoplasmic stress
+    granule, 69: intracellular membrane-bounded organelle, 70: cytoskeleton, 71: nuclear
+    speck, 72: intermediate filament, 73: chromosome, 74: mediator complex, 75: kinetochore,
+  76: lysosomal lumen, 77: STAGA complex, 78: Cul4A-RING ubiquitin ligase complex,
+  79: ribosome, 80: NADPH oxidase complex, 81: cellular_component, 82: proteasome
+    complex, 83: cell leading edge, 84: Ino80 complex, 85: mitochondrion, 86: above,
+  87: membrane, 88: nuclear matrix, 89: integral to plasma membrane, 90: condensed
+    nuclear chromosome, 91: ubiquitin ligase complex, 92: microtubule basal body,
+  93: protein complex, 94: filopodium, 95: phagocytic vesicle membrane, 96: Cajal
+    body, 97: IkappaB kinase complex, 98: insoluble fraction, 99: cis-Golgi network,
+  100: condensed chromosome kinetochore, 101: heterochromatin, 102: nucleus, 103: extracellular
+    regio, 104: U12-type spliceosomal complex, 105: Cul4B-RING ubiquitin ligase complex,
+  106: midbody, 107: heterogeneous nuclear ribonucleoprotein complex, 108: actin cytoskeleton,
+  109: lamin filament, 110: PRC1 complex, 111: telomerase holoenzyme complex, 112: membrane
+    fraction, 113: early endosome membrane, 114: extrinsic to endoplasmic reticulum
+    membrane, 115: microtubule organizing center, 116: nuclear chromatin, 117: extracellular
+    region, 118: rDNA heterochrom, 119: integral to membrane, 120: nuclear lamina,
+  121: perinuclear region of cytoplasm, 122: proteinaceous extracellular matrix, 123: spindle
+    pole, 124: nucleolus}

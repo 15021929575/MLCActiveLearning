@@ -3,11 +3,17 @@
 *.pyc
 
 # Ignore files in test_data
-test_data/**
+**/test/resources/**
 
 # Except labels and tree files
-!test_data/labels
-!test_data/tree
+!**/test/resources/labels
+!**/test/resources/tree
 
 predictions_at_iteration*
-label_*
+
+temp/*
+target/**
+
+.classpath
+.project
+.settings/**
