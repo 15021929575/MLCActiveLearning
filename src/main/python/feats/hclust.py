@@ -50,10 +50,13 @@ def get_clustering(distmat):
     # Every node but the root (node len(clusters)-1) has a parent
     return [children.index(clust) / 2 for clust in xrange(len(clusters)-1)]
 
-if __name__ == '__main__':
-    distmat = cPickle.load(sys.argv[1])
+def main(args):
+    distmat = cPickle.load(open(args[1]))
     clustering = get_clustering(distmat)
-    tree = open(sys.argv[2], 'w')
+    tree = open(args[2], 'w')
     for parent in clustering:
         print >> tree, parent
     print >> tree, -1
+
+if __name__ == '__main__':
+    main(sys.argv)

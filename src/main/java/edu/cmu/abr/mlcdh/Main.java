@@ -127,7 +127,7 @@ public class Main {
 		DH.setCurrentWindow(window);
 		final Result result = Evaluation.testClassifier(classifier, instances);
 		result.setInfo("Type", "ML");
-		result.setInfo("Threshold", "0.9");
+		result.setInfo("Threshold", "0.5");
 		return Result.getStats(result, "2");
 	}
 }

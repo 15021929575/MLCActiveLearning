@@ -39,7 +39,9 @@ public class SubsetHClusterer implements HClusterer {
 						this.treeFilePath }, null,
 				new File(this.subsetHClustererPath).getParentFile());
 		process.waitFor();
-		assert (process.exitValue() == 0);
+		if (process.exitValue() != 0) {
+			throw new IOException("HClusterer failed");
+		}
 	}
 
 	private void saveSubsetToFile(Instances instances) throws IOException {

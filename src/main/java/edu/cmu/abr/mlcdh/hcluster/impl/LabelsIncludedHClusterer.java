@@ -47,7 +47,9 @@ public class LabelsIncludedHClusterer implements HClusterer {
 			System.out.print(" ");
 		}
 		System.out.println();
-		assert (process.exitValue() == 0);
+		if (process.exitValue() != 0) {
+			throw new IOException("HClusterer failed");
+		}
 	}
 
 	private void savePartialLabelsToFile(Instances instances)

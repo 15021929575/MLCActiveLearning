@@ -77,7 +77,7 @@ public class DH extends RandomizableClassifier implements Classifier {
 					dhOutputFilenamePrefix + "." + currentWindow).toString());
 			this.predictions.put(currentWindow, currentPrediction);
 		}
-		return currentPrediction.get((int) instance.value(1));
+		return currentPrediction.get((int) instance.value(instance.numAttributes() - 1));
 	}
 
 	@Override
@@ -113,7 +113,9 @@ public class DH extends RandomizableClassifier implements Classifier {
 		}
 		System.out.println();
 		process.waitFor();
-		assert (process.exitValue() == 0);
+		if (process.exitValue() != 0) {
+			throw new IOException("DH failed");
+		}
 	}
 
 	public static int getCurrentWindow() {
