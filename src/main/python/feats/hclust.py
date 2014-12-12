@@ -7,7 +7,7 @@ import os
 import re
 
 def load_distmat(distmat_file_path):
-    proteins = cPickle.load(open('proteins.pkl'))
+    proteins = cPickle.load(open('../../resources/proteins.pkl'))
     all_proteins = sorted(os.listdir('proteins'))
     protein_labeled_mask = np.array([len(proteins[p].difference([''])) != 0
                             for p in all_proteins])
@@ -51,7 +51,7 @@ def get_clustering(distmat):
     return [children.index(clust) / 2 for clust in xrange(len(clusters)-1)]
 
 def main(args):
-    distmat = cPickle.load(open(args[1]))
+    distmat = load_distmat(args[1])
     clustering = get_clustering(distmat)
     tree = open(args[2], 'w')
     for parent in clustering:
@@ -59,4 +59,5 @@ def main(args):
     print >> tree, -1
 
 if __name__ == '__main__':
+    import sys
     main(sys.argv)
